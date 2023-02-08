@@ -1,10 +1,14 @@
-# Title (replace with your title)
+# Hex RegEx Tutorial
 
-Introductory paragraph (replace this with your text)
+Hexadecimal is a number system that uses 16 different instances of symbols. These characters include 0-9 and both A-F (uppercase) and a-f (lowercase).
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+
+Above is the regEx I'm going to explain. First, I'll explain RegEx itself. RegEx is a combination of characters that is used primarily to represent colors in RGB values.
+Regular Expressions are a combination of characters that shows search patterns in regards to text. Characters can be both literal or meta, using their respective anchors.
+Meta characters are representations of larger character sets.
 
 ## Table of Contents
 
@@ -20,8 +24,16 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+RegEx Anchors include `^` and `$`.
+
+The `^` marks the beginning of a line or string. The `$` symbol represents the end. So, '^ssbm' would match any item starting with SSBM. SSBM$ would match items that end with SSBM.
+
+Hex RegEx is done front to back, so both are used.
+
 
 ### Quantifiers
+
+Quantifiers set limits of strings your RegEx matches. They normally include both minimum and maximum characters per regex.
 
 ### Grouping Constructs
 
